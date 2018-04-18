@@ -41,10 +41,15 @@ public class QueryController extends Application implements Initializable
 				//lname = new TableColumn<>("Last Name");
 				lname.setCellValueFactory(new PropertyValueFactory<Q1,String>("last"));
 				
+				
 				ObservableList<Q1> entries = FXCollections.observableArrayList();
-				entries.add(new Q1("a","b"));
-				entries.add(new Q1("c","d"));
-				entries.add(new Q1("e","f"));
+				for(int i=0; i<array.size(); i++)
+				{
+					entries.add(array.get(i));
+				}
+				
+				//entries.add(new Q1("c","d"));
+				//entries.add(new Q1("e","f"));
 				
 				table1.setItems(entries);
 				

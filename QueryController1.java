@@ -36,9 +36,10 @@ public class QueryController1 extends Application implements Initializable
 		y.setCellValueFactory(new PropertyValueFactory<Q4, String>("x"));
 		
 		ObservableList<Q4> entries = FXCollections.observableArrayList();
-		entries.add(new Q4("a"));
-		entries.add(new Q4("c"));
-		entries.add(new Q4("e"));
+		for(int i=0; i<array.size(); i++)
+		{
+			entries.add(array.get(i));
+		}
 				
 		table1.setItems(entries);
 		table1.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);

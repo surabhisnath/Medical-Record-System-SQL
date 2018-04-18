@@ -155,10 +155,10 @@ public class Project
 			System.out.println("Query 12 - Find Gids and corresp Pid of guardians who are either mother or father");
 			String query12 = "select g.gid,g.pid from Dependent g where g.relation='Mother' OR g.relation='Father'";
 			ResultSet rs12 = stmpt.executeQuery(query12);
-			ArrayList<Q12> arr12 = new ArrayList<>();
+			ArrayList<Q1> arr12 = new ArrayList<>();
 			while(rs12.next())   
 			{
-				Q12 obj = new Q12(rs12.getString(1),rs12.getString(1)) ;
+				Q1 obj = new Q1(rs12.getString(1),rs12.getString(1)) ;
 				arr12.add(obj);
 				System.out.println(rs12.getString(1)+" "+rs12.getString(2));
 			}	

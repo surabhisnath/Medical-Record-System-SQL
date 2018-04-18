@@ -43,10 +43,10 @@ public class QueryController2 extends Application implements Initializable
 				e.setCellValueFactory(new PropertyValueFactory<Q7,String>("d"));
 				
 				ObservableList<Q7> entries = FXCollections.observableArrayList();
-				entries.add(new Q7("a","b","c","d","e"));
-				entries.add(new Q7("c","d","e","f","g"));
-				entries.add(new Q7("e","f","g","h","i"));
-			
+				for(int i=0; i<array.size(); i++)
+				{
+					entries.add(array.get(i));
+				}
 				
 				table1.setItems(entries);
 				
