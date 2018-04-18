@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="600.0" style="-fx-background-color: gray; -fx-border-color: red; -fx-border-width: 12;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="22.0" prefHeight="53.0" prefWidth="478.0" style="-fx-background-color: white;" text="Queries" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="q1" alignment="CENTER" layoutX="141.0" layoutY="89.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Find names of all female patients who have age &gt; 30 and have Typhoid" />
+      <Button fx:id="Back" layoutX="274.0" layoutY="504.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="62.0" text="Back" />
+      <Label fx:id="q2" alignment="CENTER" layoutX="141.0" layoutY="123.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Find names of all patients assigned to Doctor Garg" />
+      <Label fx:id="q3" alignment="CENTER" layoutX="141.0" layoutY="159.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Find phone numbers and relation of all guardians of patient with PID 6" />
+      <Label fx:id="q4" alignment="CENTER" layoutX="141.0" layoutY="195.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Find the pid of patient having maximum age" />
+      <Label fx:id="q5" alignment="CENTER" layoutX="141.0" layoutY="230.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Find the Dids of all doctors having salary &gt; avg salary" />
+      <Label fx:id="q6" alignment="CENTER" layoutX="141.0" layoutY="264.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Find specialization, time slot of male doctors if time slot is morning or evening" />
+      <Label fx:id="q7" alignment="CENTER" layoutX="141.0" layoutY="299.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Find Did, Name, time slot , specialization of doctors with 15 to 20 years experience" />
+      <Button fx:id="Back1" layoutX="17.0" layoutY="89.0" mnemonicParsing="false" onAction="#query1" prefHeight="25.0" prefWidth="107.0" text="Query 1" />
+      <Button fx:id="Back11" layoutX="17.0" layoutY="123.0" mnemonicParsing="false" onAction="#query2" prefHeight="25.0" prefWidth="107.0" text="Query 2" />
+      <Button fx:id="Back111" layoutX="17.0" layoutY="159.0" mnemonicParsing="false" onAction="#query3" prefHeight="25.0" prefWidth="107.0" text="Query 3" />
+      <Button fx:id="Back112" layoutX="17.0" layoutY="194.0" mnemonicParsing="false" onAction="#query4" prefHeight="25.0" prefWidth="107.0" text="Query 4" />
+      <Button fx:id="Back1121" layoutX="17.0" layoutY="229.0" mnemonicParsing="false" onAction="#query5" prefHeight="25.0" prefWidth="107.0" text="Query 5" />
+      <Button fx:id="Back11211" layoutX="17.0" layoutY="265.0" mnemonicParsing="false" onAction="#query6" prefHeight="25.0" prefWidth="107.0" text="Query 6" />
+      <Button fx:id="Back112111" layoutX="17.0" layoutY="299.0" mnemonicParsing="false" onAction="#query7" prefHeight="25.0" prefWidth="107.0" text="Query 7" />
+      <Button fx:id="Back1121111" layoutX="18.0" layoutY="333.0" mnemonicParsing="false" onAction="#query8" prefHeight="25.0" prefWidth="107.0" text="Query 8" />
+      <Button fx:id="Back11211111" layoutX="18.0" layoutY="366.0" mnemonicParsing="false" onAction="#query9" prefHeight="25.0" prefWidth="107.0" text="Query 9" />
+      <Button fx:id="Back112111111" layoutX="19.0" layoutY="400.0" mnemonicParsing="false" onAction="#query10" prefHeight="25.0" prefWidth="107.0" text="Query 10" />
+      <Button fx:id="Back1121111111" layoutX="18.0" layoutY="434.0" mnemonicParsing="false" onAction="#query11" prefHeight="25.0" prefWidth="107.0" text="Query 11" />
+      <Button fx:id="Back11211111111" layoutX="18.0" layoutY="467.0" mnemonicParsing="false" onAction="#query12" prefHeight="25.0" prefWidth="107.0" text="Query 12" />
+      <Label fx:id="q8" alignment="CENTER" layoutX="141.0" layoutY="332.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Find specialization of doctor treating patient with name Arjun" />
+      <Label fx:id="q9" alignment="CENTER" layoutX="141.0" layoutY="366.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Find the Pid of patient who have blood group O+" />
+      <Label fx:id="q10" alignment="CENTER" layoutX="141.0" layoutY="399.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Display details of doctors having second max experience" />
+      <Label fx:id="q11" alignment="CENTER" layoutX="141.0" layoutY="434.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Increase salary of General Physicians by 10000" />
+      <Label fx:id="q12" alignment="CENTER" layoutX="141.0" layoutY="467.0" prefHeight="25.0" prefWidth="441.0" style="-fx-background-color: white;" text="Find Gids and Pid of guardians who are either mother or father" />
+   </children>
+</AnchorPane>
